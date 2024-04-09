@@ -1,0 +1,13 @@
+*{
+    
+}
+
+.highlight {
+    background: yellow;
+    color: white;
+}
+
+.normal {
+    background: white;
+    color: black;
+}
