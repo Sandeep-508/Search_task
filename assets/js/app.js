@@ -1,8 +1,12 @@
 let search = document.querySelector(".search");
 
 function Enter(event) {
-    if (event.key === "Enter" && search.value !== "") {
-        let value = search.value;
+    if (event.key === "Enter") {
+        let value = search.value.trim();
+        if (value === "") {
+            window.alert("Please enter a search term.");
+            return;
+        }
         let search_text = new RegExp("\\b" + value + "\\b", 'gi');
 
         let content = document.querySelector(".content");
